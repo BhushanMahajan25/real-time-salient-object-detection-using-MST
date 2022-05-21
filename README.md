@@ -42,7 +42,7 @@
   - Boundary connectivity and color dissimilarity measurements are performed for salient object detection. An auxiliary map is computed by pixel-wise color similarity measure to improve the saliency detection quality.
   - Because the map is produced pixel-by-pixel, it might seem noisy owing to picture noise or compression artifact. Off-the-shelf MST data structure is used that was previously designed for distance transformation. Tree filtering is used to smooth the map.
   - Above steps separate the boundary pixels that have distinctive color appearance which in turn give us distinct object from the background.
-  - Final result is converted into PNG image and stored in `results` directory.
+  - Final result is converted into PNG image and stored in [_results_](results) directory.
 
 
 ## Project implementation details
@@ -67,10 +67,10 @@
 - Dataset used: MSRA-B.
 
 ### Project directories
-- input_images <!--link-->: Directory of input images. User sees these input images on command line menu.
-- results <!--link-->: Directory in which final synthesized image is stored.
-- src <!--link-->: Directory containing python source code.
-- requrements.txt <!--link-->: File containing dependencies required for the file
+- [_input_images_](input_images) : Directory of input images. User sees these input images on command line menu.
+- [_results_](results) : Directory in which final synthesized image is stored.
+- [_src_](src) : Directory containing python source code.
+- [_requrements.txt_](requirements.txt) : File containing dependencies required for the file
 
 ### How to interpret the output : 
 The output image will be generated inside `results` directory.
@@ -78,22 +78,22 @@ The output image will be generated inside `results` directory.
 ## Results
 <p align="center">
   <div>
-    <img src="./input_images/0027.png" width="450" title="input">
+    <img src="./input_images/0027.png" width="350" title="input">
     <h2 align="center">Input Image
   </div>
   <div>
-    <img src="./results/out_0027.png" width="450" alt="result">
+    <img src="./results/out_0027.png" width="350" alt="result">
     <h2 align="center">Output Image
   </div>
 </p>
 <hr>
 <p align="center">
   <div>
-    <img src="./input_images/0_2_2310.png" width="450" title="input">
+    <img src="./input_images/0_2_2310.png" width="350" title="input">
     <h2 align="center">Input Image
   </div>
   <div>
-    <img src="./results/out_0_2_2310.png" width="450" alt="result">
+    <img src="./results/out_0_2_2310.png" width="350" alt="result">
     <h2 align="center">Output Image
   </div>
 </p>
