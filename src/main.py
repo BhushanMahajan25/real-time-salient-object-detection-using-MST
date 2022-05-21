@@ -16,7 +16,7 @@ if __name__ == '__main__':
         print("*********** Menu ***********")
         i = 1
         switcher = {}
-        for filename in os.listdir(config.INPUT_DIR)[1:]:
+        for filename in os.listdir(config.INPUT_DIR)[0:]:
             if filename == '.DS_Store':
                 continue
             print("{}. {}".format(i, filename))
