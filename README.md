@@ -73,27 +73,16 @@
 - [_requrements.txt_](requirements.txt) : File containing dependencies required for the file
 
 ### How to interpret the output : 
-The output image will be generated inside `results` directory.
+The output image will be generated inside [_results_](results) directory.
 
 ## Results
+_(Left: Original Image, Right: Result Image)_
 <p align="center">
-  <div>
-    <img src="./input_images/0027.png" width="350" title="input">
-    <h2 align="center">Input Image
-  </div>
-  <div>
-    <img src="./results/out_0027.png" width="350" alt="result">
-    <h2 align="center">Output Image
-  </div>
+  <img src="./input_images/0027.png" width="350" title="input">
+  <img src="./results/out_0027.png" width="350" alt="result">
 </p>
 <hr>
 <p align="center">
-  <div>
-    <img src="./input_images/0_2_2310.png" width="350" title="input">
-    <h2 align="center">Input Image
-  </div>
-  <div>
-    <img src="./results/out_0_2_2310.png" width="350" alt="result">
-    <h2 align="center">Output Image
-  </div>
+  <img src="./input_images/0_2_2310.png" width="350" title="input">
+  <img src="./results/out_0_2_2310.png" width="350" alt="result">
 </p>
