@@ -4,7 +4,7 @@ import sys
 import traceback
 import config
 
-from MST import MBDMSTree
+from mst import MinBarrierDistMST
 
 if __name__ == '__main__':
     try:
@@ -30,6 +30,15 @@ if __name__ == '__main__':
         else:
             filepath = os.path.join(config.INPUT_DIR, filename)
             img = cv2.imread(filepath)
+            mbdst = MinBarrierDistMST(img)
+            for i in range(mbdst.img_width):
+                mbdst.is_seed[i] = True
+                mbdst.is_seed[(mbdst.img_height-1) * mbdst.img_width + i] = True
+            for i in range(mbdst.img_height):
+                mbdst.is_seed[i * mbdst.img_width] = True
+                mbdst.is_seed[i * mbdst.img_width + mbdst.img_width - 1] = True
+            salmap = mbdst.calculate_minimum_barrier_distance()
+            cv2.imwrite(os.path.join(config.OUTPUT_DIR, 'out_{}'.format(filename)), salmap)
             
     except FileNotFoundError:
         print("Input folder empty. Please populate the folder with images")
